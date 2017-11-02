@@ -1,0 +1,60 @@
+@charset 'UTF-8';
+
+
+/* 开始 顶部 */
+.wrap{height:30px;background-color:#F4F4F4;border-bottom:1px solid #E5E5E5}
+
+/* 开始 导航栏 */
+.nav{width:1230px;height:100%;margin:0 auto;}
+
+     /* 开始 左侧 */
+	.left{width:119px;height:30px;line-height:30px;}
+	.left i{color:#FF4040; }
+	.left .a-2:hover{color:#FF4040;}
+
+    /* 开始 右侧 */
+	.right{width:378px;height:100%;}
+	.right li{position:relative;float:left;line-height:29px;padding-right:20px;}
+	.right .lis-1{color:#FF4040;padding-right:10px;}	
+	.right .lis-2{color:#AAAAAA;}
+	.right .lis-4{width:68px;}
+    .right li a:hover{color:#FF4040;}	 
+
+    .right .lis-4 .iconfont{display:inline-block;transition:0.5s;/* 过渡 */}	
+	.right .lis-4:hover .iconfont{transform:rotate(180deg);/* 旋转 */}	
+		
+    .right .lis-4 div{display:none;position:absolute;width:80px;height:50px; margin-top:29px;padding:5px;
+        left:-10px;top:0px;background: #fff;border:1px solid #DBDBDB;border-top:none;}
+	
+	.right .lis-4:hover div{display:block;z-index:1;}
+
+	.right .lis-4 div a{display:block;}
+	
+	.right .lis-5{width:63px;padding-left:20px;padding-right:0;border:1px solid #DBDBDB;}	
+/* 开始  公共搜索导航*/
+
+/* 开始 图标 */
+ .s-wrap .h-img{width:206px;height:150px;background:url('../images/00-header/1.png') no-repeat center/cover;}
+/* 开始 搜索 */
+ .s-wrap .h-search{width:789px;height:150px;}
+ .s-wrap .h-search .search-wrap{width:760px;height:36px;margin-top:30px;margin-left:38px;}
+ .s-wrap .h-search .search-wrap .search-box input{width:696px;height:32px;font-size:14px;text-indent:1em;border:2px solid #FF4040;}
+ .s-wrap .h-search .search-wrap .search-img{width:50px;height:38px;text-align:center;line-height:38px;font-weight:bold;color:#fff;background-color:#FF4040;}
+ .s-wrap .h-search .search-wrap .search-img i{font-size:24px;}
+/* 开始 上导航 */
+ .s-wrap .h-search .nav-1{margin-left:38px;margin-top:75px;font-size:14px;color:#BFBFBF;}
+ .s-wrap .h-search .nav-1 > a{margin-right:15px;}
+ .s-wrap .h-search .nav-1 > a:hover{color:#FF4C4C;}
+/* 开始 下导航 */
+ .s-wrap .h-search .nav-2{margin-left:38px;margin-top:18px;font-size:17px;color:black;}
+ .s-wrap .h-search .nav-2 > a{margin-right:20px;}
+ .s-wrap .h-search .nav-2 > a:hover{color:#FF4C4C;}
+
+/* 开始 购物车 */
+ .s-wrap .h-shop{position:relative;width:232px;height:150px;}
+ .s-wrap .h-shop .shop-bor{position:absolute; padding:7px 25px;top:27px;left:105px;font-size: 18px;border:1px solid #D7D7D7;/* border-right:none; */}
+
+/* 开始 底部 */
+
+/* common.css结束 */
+

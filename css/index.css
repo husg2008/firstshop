@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+/* 开始 身体*/
+.body{height:8000px;margin:0 auto;} 
+
+/* 开始  轮播图 */
+.turn-wrap{position:relative;height: 400px;background: url('../images/01-banner/0.jpg') no-repeat center/cover;}
+
+/* 开始 左侧导航 */
+.turn-wrap .nav{position:absolute;width: 194px;height: 400px;left:18px;color:#fff;z-index:1;background-color:#354D63;}
+.turn-wrap .nav li{height:33px;width: 194px;line-height:32px;}
+.turn-wrap .nav .lis-1{margin-top:2px;}
+.turn-wrap .nav .lis-1:hover{}
+.turn-wrap .nav li:hover{background-color: #fff;}
+.turn-wrap .nav li:hover .i-left{color:#FF7171;}
+.turn-wrap .nav li:hover span{color:#666;}
+.turn-wrap .nav li i{display:inline-block;color:#666;width: 15px;font-size:20px;padding:0 20px 0 15px;}
+.turn-wrap .nav li span{display:inline-block;}
+/* 开始 子导航 */
+.sub-nav{display:none;position:relative;top:-37px;left:194px;width: 1051px;height: 400px;
+    background: #fff;border-top:1px solid #eee;}
+.nav .lis-1:hover .sub-nav{display:block;}
+.nav:hover .turn-vis{display:none;background:none;}
+.sub-nav a:hover{font-weight:bold;}
+/* 开始 子导航左侧 */
+.sub-nav .nav-left{position:absolute;top:10px;width: 699px;height: 425px;}
+.sub-nav dl{color:#666;}
+.sub-nav dl  dt{height: 39px;line-height:30px;width:92px;margin-left:10px;font-size:14px;font-weight:bold; }
+.sub-nav dl  dt i{margin-left:-18px;}
+.sub-nav dl  dd{height: 39px;line-height:30px;width: 593px; border-bottom:1px solid #eee;}
+.sub-nav dl  dd a{padding-right:10px;}
+/* 开始 子导航右侧 */
+.sub-nav .nav-rig{position:absolute;top:10px;left:699px;border-left:1px solid #eee;}
+.sub-nav .nav-rig ul li{float:left;width: 260px;height: 50px;}
+.sub-nav .nav-rig ul li img{float:left;width: 80px;height: 35px;padding:15px 0 0 50px;}
+.sub-nav .nav-rig img{float:left;width: 228px;height: 122px;padding:10px 0 0 40px;}
+
+/* 结束 左侧导航 */
+
+/* 开始 右侧轮播可视区 */
+.turn-vis{position:relative;width: 1018px;height: 400px;margin:-400px 0 0 212px;overflow:hidden;}
+/*开始 可视区底部按钮*/
+.turn-vis .mark{position:absolute;top:360px;left:300px;}
+.turn-vis .mark span{display:inline-block;background:#fff;width: 12px;height:12px;margin-right:10px;border-radius:50%;}
+.turn-vis .mark span:hover{background-color:red;box-shadow:0 0 0 2px #fff;}
+/*开始 可视区左右图标*/
+.turn-vis  .i-left{position:absolute;top:190px;left:20px;}
+.turn-vis  .i-rig{position:absolute;top:190px;left:750px;font-weight:bold;}
+.turn-vis .arrow div{display:none;width:40px;height:40px;line-height:40px;background: #eee;border:1px solid #fff;
+    border-radius:50%;}
+.turn-vis:hover .arrow div{display:block;}
+.turn-vis .arrow div:hover{background:#fff;}
+.turn-vis .arrow div:hover i{color:red;}
+.turn-vis .arrow i{display:block;text-align:center;font-size:20px;color:#999;}
+/*开始 可视区右侧登陆*/
+.turn-vis .login-wrap{
+    width: 205px;
+    height: 236px;
+    background: #fff;}
+
+
+
