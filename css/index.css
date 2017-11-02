@@ -52,10 +52,17 @@
 .turn-vis .arrow div:hover i{color:red;}
 .turn-vis .arrow i{display:block;text-align:center;font-size:20px;color:#999;}
 /*开始 可视区右侧登陆*/
-.turn-vis .login-wrap{
-    width: 205px;
-    height: 236px;
-    background: #fff;}
+.turn-vis .login-wrap{position:absolute;left:810px;top:75px;width: 205px;height: 236px;background: #EBEDF1;}
+.turn-vis .login-wrap .login-header{position:absolute;top:-29px;left:65px;width:64px;height:64px;
+    border:5px solid #D5D8DB;border-radius:50%;background: url('../images/00-header/2.png')0 112px;}
+.turn-vis .login-wrap p{text-align:center;margin-top:55px;}
+.turn-vis .login-wrap a>p{display:inline-block;margin:30px 0 0 20px;padding:5px 20px;color:red;border:1px solid red;
+    border-radius:20px;}
+.turn-vis .login-wrap a>p:hover{background: red;color:#fff;}
+.turn-vis .login-wrap ul{margin:20px 0 0 10px;}
+.turn-vis .login-wrap ul li{padding-bottom:10px;}
+.turn-vis .login-wrap ul li:hover{color:red;}
+.turn-vis .login-wrap ul li span{color:red;}
 
 
 
