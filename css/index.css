@@ -37,7 +37,7 @@
 /* 结束 左侧导航 */
 
 /* 开始 右侧轮播可视区 */
-.turn-vis{position:relative;width: 1018px;height: 400px;margin:-400px 0 0 212px;overflow:hidden;}
+.turn-vis{position:relative;width: 1018px;height: 400px;margin-left:212px;overflow:hidden;}
 /*开始 可视区底部按钮*/
 .turn-vis .mark{position:absolute;top:360px;left:300px;}
 .turn-vis .mark span{display:inline-block;background:#fff;width: 12px;height:12px;margin-right:10px;border-radius:50%;}
