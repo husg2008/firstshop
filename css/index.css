@@ -64,10 +64,30 @@
 .turn-vis .login-wrap > p{line-height:24px;}
 .turn-vis .login-wrap > p > a > span{color:red;}
 .turn-vis .login-wrap > p > a:hover{color:red;}
-/*开始 抢购网页区块*/
-.purchase-wrap{width:830px;height:140px;margin:0 auto;}
-/*开始 抢购剩余时间*/
-.purchase-time{width:205px;height:100%;}
+/*抢购网页区块*/
+.purchase-wrap{width:1230px;height:140px;margin:10px auto;text-align:center;}
+/*抢购剩余时间*/
+.purchase-time{width:205px;height:100%;background-color: #EC3639;}
+.purchase-time h3{font-size:20px;color:#fff;padding:10px 0 8px 0;}
+.purchase-time span{color:#570706;}
+.purchase-time div{padding:8px;}
+.purchase-time div span{width:36px;height:26px;padding:2px 5px;font-size:15px;font-weight:600;color:#fff;
+    background-color: #000;}
+.purchase-time div b{color:#000;font-weight:bold;}
+.purchase-time p > span{margin-left:15px;color:#fff;}
+.purchase-time p > i{display:inline-block;width:12px;height:12px;color:#fff;}
+/*抢购剩余比例*/
+.purchase-rate ul{}
+.purchase-rate li{position:relative;width:235px;height:120px;text-align:left;padding:20px 0 0 20px;}
+.purchase-rate li .rate-left{width:100px;height:110px;}
+.purchase-rate li .rate-left p{overflow:hidden;width:87px;height:39px;}
+.purchase-rate li .rate-left b{display:block;margin-top:20px;}
+.purchase-rate li .rate-left > span{display:block;margin-top:-10px;}
+.purchase-rate li .rate-right{width:110px;height:110px;}
+.purchase-rate li .rate-right img{width:107px;height:105px;margin:-115px 0 0 100px;}
+.purchase-rate li .mark{position:absolute;width:37px;height:37px;font-size:12px;text-align:center;
+    line-height:17px;color:#fff;top:10px;left:210px;background-color: red;}
+.purchase-rate li .mark > p{}
 
 
 
