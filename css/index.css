@@ -79,6 +79,8 @@
 /*抢购剩余比例*/
 .purchase-rate ul{}
 .purchase-rate li{position:relative;width:235px;height:120px;text-align:left;padding:20px 0 0 20px;}
+.purchase-rate li:after{content:'';position:absolute;top:35px;right:-2px;width:0;height:70px;
+    border-right:1px dotted #000;}
 .purchase-rate li .rate-left{width:100px;height:110px;}
 .purchase-rate li .rate-left p{overflow:hidden;width:87px;height:39px;}
 .purchase-rate li .rate-left b{display:block;margin-top:20px;}
