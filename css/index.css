@@ -108,7 +108,8 @@
 .fresh-left div p:after{content:"";width:50px;height:0;position:absolute;top:60px;left:70px;
     border-bottom:1px solid #000;}
 .fresh-left div span{display:block;line-height:50px;font-size:12px;}
-
+.fresh-right .right-1{position:absolute;top:0;left:200px;width:484px;height:820px;}
+.fresh-right .right-2{position:absolute;top:0;left:600px;width:453px;height:820px;}
 
 
 
