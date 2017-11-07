@@ -78,18 +78,19 @@
 .purchase-time p > i{display:inline-block;width:12px;height:12px;color:#fff;}
 /*抢购剩余比例*/
 .purchase-rate ul{}
-.purchase-rate li{position:relative;width:235px;height:120px;text-align:left;padding:20px 0 0 20px;}
+.purchase-rate li{position:relative;width:234px;height:120px;text-align:left;padding:20px 0 0 20px;}
 .purchase-rate li:after{content:'';position:absolute;top:35px;right:-2px;width:0;height:70px;
-    border-right:1px dotted #000;}
+    border-right:1px dotted #ddd;}
 .purchase-rate li .rate-left{width:100px;height:110px;}
 .purchase-rate li .rate-left p{overflow:hidden;width:87px;height:39px;}
 .purchase-rate li .rate-left b{display:block;margin-top:20px;}
 .purchase-rate li .rate-left > span{display:block;margin-top:-10px;}
-.purchase-rate li .rate-right{width:110px;height:110px;}
-.purchase-rate li .rate-right img{width:107px;height:105px;margin:-115px 0 0 100px;}
+.purchase-rate li .rate-right{width:110px;height:110px;margin:-115px 0 0 100px;}
+.purchase-rate li .rate-right img{transition:.5s;width:107px;height:105px;}
+.purchase-rate li .rate-right img:hover{margin-left:-10px;}
 .purchase-rate li .mark{position:absolute;width:37px;height:37px;font-size:12px;text-align:center;
     line-height:17px;color:#fff;top:10px;left:210px;background-color: red;}
-.purchase-rate li .mark > p{}
+
 
 
 
