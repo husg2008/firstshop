@@ -12,8 +12,8 @@ var oVis = document.querySelector(".turn-vis .pic"),
 for(i=0;i<length;i++){
     //添加自定义属性保存i序列号
     aMark[i].index = i;
-
-    aMark[i].onmouseenter = function () {
+    aMark[i].onmouseenter = fn;
+    function fn(){
         //隐藏前一张图片 去掉标签的背景色与盒子阴影
         aPic[j].className = "";
         aMark[j].style.backgroundColor = "#fff";
