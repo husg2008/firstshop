@@ -3,7 +3,8 @@
 .body{height:8000px;margin:0 auto;} 
 
 /* 轮播图 */
-.turn-wrap{height: 400px;}
+.turn-wrap{height: 400px;
+    background: url("../images/01-banner/00.jpg") no-repeat center/cover;}
 /*轮播最外层盒子*/
 .turn-banner{position:relative;width:1230px;height:100%;margin:0 auto;}
 /* 左侧导航 */

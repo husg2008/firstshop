@@ -6,7 +6,7 @@ var oVis = document.querySelector(".turn-vis .pic"),
     aPic = oVis.querySelectorAll(".pic-main img"),
     aMark = oVis.querySelectorAll(".mark span"),
     aBtn = oVis.querySelectorAll(".btn div"),
-    j = 0,
+    num= 0,
     k = ["00","01","02","03","04","05","06","07","08"],
     length = aMark.length;
 for(i=0;i<length;i++){
@@ -15,19 +15,60 @@ for(i=0;i<length;i++){
     aMark[i].onmouseenter = fn;
     function fn(){
         //隐藏前一张图片 去掉标签的背景色与盒子阴影
-        aPic[j].className = "";
-        aMark[j].style.backgroundColor = "#fff";
-        aMark[j].style.boxShadow = "none";
+        aPic[num].className = "";
+        aMark[num].style.backgroundColor = "#fff";
+        aMark[num].style.boxShadow = "none";
         //改变j的值
-        j = this.index;
+        num = this.index;
         //显示当前图片
-        aPic[j].className += "on";
-        aMark[j].style.backgroundColor = "red";
+        aPic[num].className += "on";
         //添加当前标签的背景色与盒子阴影
-        aMark[j].style.boxShadow = "0 0 0 2px #fff";
+        aMark[num].style.backgroundColor = "red";
+        aMark[num].style.boxShadow = "0 0 0 2px #fff";
         //添加当前图片的背景以保持与可视窗口的图片同色调显示
-        oBg.style.backgroundImage = "url('images/01-banner/" + k[j] + ".jpg')";
+        oBg.style.backgroundImage = "url('images/01-banner/" + k[num] + ".jpg')";
         oBg.style.backgroundSize = "cover";
         oBg.style.backgroundRepeat = "no";
     }
 }
+var j = 0;
+//右侧按钮 用if判断实现循环轮播
+aBtn[1].onclick = function () {
+    //隐藏前一张图片 去掉标签的背景色与盒子阴影
+    aPic[j].className = "";
+    aMark[j].style.backgroundColor = "#fff";
+    aMark[j].style.boxShadow = "none";
+    j++;
+    if(j>length-1){
+        j = 0;
+    }
+    //显示当前图片
+    aPic[j].className += "on";
+    //添加当前标签的背景色与盒子阴影
+    aMark[j].style.backgroundColor = "red";
+    aMark[j].style.boxShadow = "0 0 0 2px #fff";
+    //添加当前图片的背景以保持与可视窗口的图片同色调显示
+    oBg.style.backgroundImage = "url('images/01-banner/" + k[j] + ".jpg')";
+    oBg.style.backgroundSize = "cover";
+    oBg.style.backgroundRepeat = "no";
+};
+//左侧按钮 用if判断实现循环轮播
+aBtn[0].onclick = function () {
+    //隐藏前一张图片 去掉标签的背景色与盒子阴影
+    aPic[j].className = "";
+    aMark[j].style.backgroundColor = "#fff";
+    aMark[j].style.boxShadow = "none";
+    j--;
+    if(j<0){
+        j = length-1;
+    }
+    //显示当前图片
+    aPic[j].className += "on";
+    //添加当前标签的背景色与盒子阴影
+    aMark[j].style.backgroundColor = "red";
+    aMark[j].style.boxShadow = "0 0 0 2px #fff";
+    //添加当前图片的背景以保持与可视窗口的图片同色调显示
+    oBg.style.backgroundImage = "url('images/01-banner/" + k[j] + ".jpg')";
+    oBg.style.backgroundSize = "cover";
+    oBg.style.backgroundRepeat = "no";
+};
